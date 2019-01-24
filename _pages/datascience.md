@@ -1,7 +1,7 @@
 ---
 layout: archive
 permalink: /datascience/
-title: "Data Scence Posts"
+title: "Data Scence Posts by Tags"
 author_profile: true
 
 header: 
