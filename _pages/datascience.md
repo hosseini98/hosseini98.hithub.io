@@ -1,13 +1,12 @@
 ---
 layout: archive
-permalink: /datascience.md/
-author_profile: True
+permalink: /datascience/
+title: "Data Scence Posts"
+author_profile: true
+
 header: 
-    iamge: "/images/waterfront.jpg"
-
+    image: "/images/waterfront.jpg"
 ---
-
-
 {% include group-by-array collection=site.posts field="tags" %}
 
 {% for tag in group_names %}
