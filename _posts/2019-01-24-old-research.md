@@ -1,5 +1,5 @@
 ---
-title: "Research: What I Did As A Research Assistant"
+title: "Research: What I Did as a Research Assistant"
 date: 2019-01-24
 tags: []
 header: 
