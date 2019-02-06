@@ -1,12 +1,3 @@
----
-title: "How to Deal with Messy Data? "
-date: 2019-02-01
-tags: [Data Cleaning, Python]
-header: 
-    image: "/images/waterfront.jpg"
-excerpt: "Data Cleaning, Python"
-mathjax: "true"
----
 
 Here, I will clean data from Financial Services Consumer Complaint Database which is publicly avalable in this link: https://catalog.data.gov/dataset/consumer-complaint-database#topic=consumer_navigation. As described in this webpage, it contains "data from the complaints received by the Consumer Financial Protection Bureau (CFPB) on financial products and services, including bank accounts, credit cards, credit reporting, debt collection, money transfers, mortgages, student loans, and other types of consumer credit. Data available about each complaint includes the name of the provider, type of complaint, date, zip code, and other information."
 
