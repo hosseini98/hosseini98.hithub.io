@@ -1,27 +1,5 @@
----
-title: "Exploratory Data Analysis"
-date: 2019-01-28
-tags: [Data Visualization, Data Preperation]
-header: 
-    image: "/images/waterfront.jpg"
-excerpt: " Cleaning, Visualization"
-mathjax: "true"
----
-# Project 3
 
-
-# Introduction 
-In early stages of a data project, espacially in early stages of a project, it is crucual to create visualizations to get an insight to your data. Matploylib and seaborn are two popular Python library that make visualizatio  much more easier. you can put all Visualization techniques in four different catagories:
- 1. Comparison: Either You want to compare features with each other or a single featuer with itself at diffrent time points, the most popular techniques is to use bar chart. 
- 2. Relationship: This is when you want to see how features in your data set are changing with respect to each other. Scatter plot and line plot are in this catagory. 
- 3. Composition: Pie chart should be the one to refer when you want to understand the composition in a feature. 
- 4. Distribution: Histograms (eighrt bar type or line type)  and scatter plot are usually used to understand the statistical characteristics of a feature.
-
- Here I will use this visualization techniques to get a meaning from this dataset and answer the following questions and provide evidence for our hypothesis: 
-
-
-
-## Introduction to dataset: Customer value analysis
+# Customer value analysis
 
 The goal of this post is to analyse a dataset and provide some useful information regarding customers demographics and buying behaviour.  I choose to qork on a dataset from IBM Watson Analytics (available [here](https://www.ibm.com/communities/analytics/watson-analytics-blog/guide-to-sample-datasets/)). I will provide answers to assigned questions by visualization methods in Python. This dataset will show us the most profitable customers and how they interact. I will show you how you can increase profitable customer response, retention and growth. let's start!
 
@@ -36,6 +14,7 @@ import os
 df = pd.read_csv("WA_Fn_UseC__Marketing_Customer_Value_Analysis.csv")
 ```
 
+## Introduction to dataset
 
 There were a total of 24 variables in this dataset . The variables and the description of the values are as follows
 1. Customer: The customer ID number
@@ -949,7 +928,7 @@ sb.barplot(x = "Gender", y = "Numbers", data = gb, hue = "Education", palette = 
 ```
 
 
-<img src="{{ site.url }}{{ site.baseurl }}/images/Marketing_Customer_Value_Analysis/output_30_0.png" alt="output">
+![png](output_30_0.png)
 
 
 
@@ -961,7 +940,7 @@ sb.barplot(x = "Vehicle Class", y = "Numbers", data = gb, hue = "Vehicle Size", 
 ```
 
 
-<img src="{{ site.url }}{{ site.baseurl }}/images/Marketing_Customer_Value_Analysis/output_31_0.png" alt="output">
+![png](output_31_0.png)
 
 
 
@@ -973,7 +952,7 @@ sb.barplot(x = "Vehicle Class", y = "Numbers", data = gb, hue = "Coverage", pale
 ```
 
 
-<img src="{{ site.url }}{{ site.baseurl }}/images/Marketing_Customer_Value_Analysis/output_32_0.png" alt="output">
+![png](output_32_0.png)
 
 
 
@@ -985,7 +964,7 @@ sb.barplot(x = "Vehicle Size", y = "Numbers", data = gb, hue = "Coverage", palet
 ```
 
 
-<img src="{{ site.url }}{{ site.baseurl }}/images/Marketing_Customer_Value_Analysis/output_33_0.png" alt="output">
+![png](output_33_0.png)
 
 
 
@@ -997,7 +976,7 @@ sb.barplot(x = "Policy", y = "Numbers", data = gb, hue = "Policy Type", palette 
 ```
 
 
-<img src="{{ site.url }}{{ site.baseurl }}/images/Marketing_Customer_Value_Analysis/output_34_0.png" alt="output">
+![png](output_34_0.png)
 
 
 
@@ -1085,7 +1064,7 @@ plt.legend(bbox_to_anchor=(1.05, 1), loc=2, borderaxespad=0.)
 
 
 
-<img src="{{ site.url }}{{ site.baseurl }}/images/Marketing_Customer_Value_Analysis/output_37_1.png" alt="output">
+![png](output_37_1.png)
 
 
 
@@ -1101,7 +1080,7 @@ sb.catplot(x="Customer Lifetime Value",y="Policy",data=df)
 
 
 
-<img src="{{ site.url }}{{ site.baseurl }}/images/Marketing_Customer_Value_Analysis/output_38_1.png" alt="output">
+![png](output_38_1.png)
 
 
 
@@ -1111,7 +1090,7 @@ g.fig.autofmt_xdate()
 ```
 
 
-<img src="{{ site.url }}{{ site.baseurl }}/images/Marketing_Customer_Value_Analysis/output_39_0.png" alt="output">
+![png](output_39_0.png)
 
 
 
@@ -1137,7 +1116,7 @@ plt.show()
 ```
 
 
-<img src="{{ site.url }}{{ site.baseurl }}/images/Marketing_Customer_Value_Analysis/output_41_0.png" alt="output">
+![png](output_41_0.png)
 
 
 
@@ -1178,7 +1157,7 @@ sb.catplot(x="Customer Lifetime Value", y="Coverage", hue="State", kind="swarm",
 ```
 
 
-<img src="{{ site.url }}{{ site.baseurl }}/images/Marketing_Customer_Value_Analysis/output_44_0.png" alt="output">
+![png](output_44_0.png)
 
 
 
@@ -1194,7 +1173,7 @@ sb.catplot(x="Customer Lifetime Value",y="Marital Status",kind='box',data=df)
 
 
 
-<img src="{{ site.url }}{{ site.baseurl }}/images/Marketing_Customer_Value_Analysis/output_45_1.png" alt="output">
+![png](output_45_1.png)
 
 
 
@@ -1210,7 +1189,7 @@ sb.catplot(x="Customer Lifetime Value",y="Marital Status", hue = "Gender", kind=
 
 
 
-<img src="{{ site.url }}{{ site.baseurl }}/images/Marketing_Customer_Value_Analysis/output_46_1.png" alt="output">
+![png](output_46_1.png)
 
 
 
@@ -1226,7 +1205,7 @@ sb.catplot(x="Customer Lifetime Value",y="EmploymentStatus",kind='violin',data=d
 
 
 
-<img src="{{ site.url }}{{ site.baseurl }}/images/Marketing_Customer_Value_Analysis/output_47_1.png" alt="output">
+![png](output_47_1.png)
 
 
 
@@ -1238,7 +1217,7 @@ ax.
 ```
 
 
-<img src="{{ site.url }}{{ site.baseurl }}/images/Marketing_Customer_Value_Analysis/output_48_0.png" alt="output">
+![png](output_48_0.png)
 
 
 
@@ -1247,7 +1226,7 @@ sb.catplot(x="Sales Channel", y="Customer Lifetime Value", hue="Renew Offer Type
 ```
 
 
-<img src="{{ site.url }}{{ site.baseurl }}/images/Marketing_Customer_Value_Analysis/output_49_0.png" alt="output">
+![png](output_49_0.png)
 
 
 
@@ -1267,7 +1246,7 @@ for i in range(0,len(l)):
 ```
 
 
-<img src="{{ site.url }}{{ site.baseurl }}/images/Marketing_Customer_Value_Analysis/output_51_0.png" alt="output">
+![png](output_51_0.png)
 
 
 
@@ -1284,12 +1263,5 @@ for i in range(0,len(l)):
 ```
 
 
-<img src="{{ site.url }}{{ site.baseurl }}/images/Marketing_Customer_Value_Analysis/output_52_0.png" alt="output">
-
-
-
-
-
-
-
+![png](output_52_0.png)
 
